@@ -1,33 +1,35 @@
 // Задание 1
 let n = '1';
 if (n == 'hidden') {
-    alert("visible");
+    n = 'visible';
 } else {
-    alert("hidden");
+    n = 'hidden';
 }
 
 
 // Задание 2
 let x = 2;
 if (x == 0) {
-    alert("1");
+    x = 1;
 } else if (x < 0) {
-    alert("less then zero");
+    x = 'less then zero';
 } else {
-    alert(x * 10);
+    x = x *10;
 }
 
 
 // Задание 3
 let number = prompt('Введите число');
-let result = (number < 5) ? '0' :
-    (number > 5) ? '1' :
-        console.log(result);
+number = Number(number);
+let result = (number < 5) ? 0 : 1;
+console.log(result);
 
 
 //  Задание 4
 let number1 = prompt('Введите число');
 let number2 = prompt('Введите число');
+number1 = Number(number1);
+number2 = Number(number2);
 if (number1 > number2) {
     console.log(number1);
 } else if (number1 < number2) {
@@ -40,8 +42,10 @@ if (number1 > number2) {
 // Задание 5
 let num1 = prompt('Введите число');
 let num2 = prompt('Введите число');
+num1 = Number(num1);
+num2 = Number(num2);
 let remains = num1 % num2;
-if (remains = 0) {
+if (remains == 0) {
     console.log(0);
 } else {
     console.log(num1 % num2);
@@ -50,6 +54,7 @@ if (remains = 0) {
 
 // Задание 6
 let mid = prompt('Введите ваш срдений бал');
+mid = Number(mid);
 if (mid < 5) {
     alert('Двоечник, иди учись!');
 } else if (mid < 9) {
@@ -62,6 +67,8 @@ if (mid < 5) {
 // Задание 7
 let mark = prompt('Введите ваш балл за экзамен');
 let project = prompt('Введите количество выполненных проектов');
+mark = Number(mark);
+project = Number(project);
 if (mark > 90 || project > 10) {
     console.log(100);
 } else if (mark > 75 || project >= 5) {
@@ -76,6 +83,7 @@ if (mark > 90 || project > 10) {
 // Задание 8
 let day = prompt('Введите колличество дней, на которое хотите арндевать авто.')
 let cost = 40;
+day = Number(day);
 if (day >= 7) {
     alert(day * cost - 50)
 } else if (day >= 3) {
