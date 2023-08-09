@@ -23,7 +23,7 @@ document.body.append(paragraph);
 
 // Задание 5
 const forAdding = document.querySelector('.forAdding');
-forAdding.textContent = Date()
+forAdding.textContent = new Date()
 
 
 // Задание 6
