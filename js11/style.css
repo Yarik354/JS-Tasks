@@ -1,0 +1,16 @@
+body{
+    transition: background-image 0.5s;
+}
+
+
+img {
+    width: 350px;
+    height: 200px;
+    cursor: pointer;
+}
+
+
+.active {
+    border: 5px solid black;
+}
+
