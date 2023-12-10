@@ -1,0 +1,11 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serifS;
+}
+
+.info-item{
+    display: none;
+}
+
+.info-item.active{
+    display: block;
+}
